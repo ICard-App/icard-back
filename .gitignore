@@ -8,6 +8,7 @@ Thumbs.db
 *.pyc
 __pycache__/
 local_settings.py
+./icard/icard/settings.py
 
 # Directorios
 media/
