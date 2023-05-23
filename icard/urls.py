@@ -25,6 +25,7 @@ from django.conf.urls.static import static
 
 from categories.api.router import router_category
 from products.api.router import router_product
+from payments.api.router import router_payments
 
 
 schema_view = get_schema_view(
@@ -47,5 +48,6 @@ urlpatterns = [
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api/', include(router_category.urls)),
     path('api/', include(router_product.urls)),
+    path('api/', include(router_payments.urls)),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
