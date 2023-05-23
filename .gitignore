@@ -8,9 +8,8 @@ Thumbs.db
 *.pyc
 __pycache__/
 local_settings.py
+.env
 
-# settings.py que lleva credenciales
-icard/icard/settings.py
 
 # Directorios
 media/
