@@ -9,13 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-<<<<<<<< HEAD:icard/settings copy.py
 
 import os
 import datetime
-========
-import os
->>>>>>>> main:icard/settings.py
 from pathlib import Path
 import environ
 
@@ -57,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_yasg',
-<<<<<<<< HEAD:icard/settings copy.py
     'corsheaders',
     'django_filters',
     'users',
@@ -66,12 +61,6 @@ INSTALLED_APPS = [
     'tables',
     'orders',
     'payments'
-========
-    'categories',
-    'products',
-    'payments',
-
->>>>>>>> main:icard/settings.py
 ]
 
 MIDDLEWARE = [
@@ -186,7 +175,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-<<<<<<<< HEAD:icard/settings copy.py
 # USERS
 AUTH_USER_MODEL = 'users.User'
 
@@ -210,9 +198,3 @@ STATICFILES_DIRS = (
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-========
-
-STATIC_URL = '/static/'
-MEDIA_URL = '/uploads/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
->>>>>>>> main:icard/settings.py
