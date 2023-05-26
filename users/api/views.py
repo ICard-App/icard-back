@@ -25,6 +25,7 @@ class UserApiViewSet(ModelViewSet):
             request.data['password'] = request.user.password
         return super().update(request, *args, **kwargs)
 
+
 class UserView(APIView):
     permission_classes = [IsAuthenticated]
 
